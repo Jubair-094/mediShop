@@ -1,0 +1,278 @@
+/* Body Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Main Container */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ffffff;
+}
+
+/* Left Section (Image Section) */
+.login-left {
+    flex: 1;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-left img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* Right Section (Login Form Section) */
+.login-right {
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.login-right h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+p {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #666;
+}
+
+p a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .login-container {
+        flex-direction: column;
+    }
+
+    .login-left {
+        display: none; /* Hide the image on small screens */
+    }
+
+    .login-right {
+        padding: 20px;
+        width: 100%;
+    }
+}
+/* Button Styles */
+button, input[type="submit"] {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    width: auto; /* Ensure the button sizes are not full-width */
+    margin-top: 10px;
+}
+
+/* To prevent buttons from stretching abnormally */
+.product button,
+.product input[type="submit"] {
+    max-width: 200px; /* Set max-width to prevent oversized buttons */
+    font-size: 16px; /* Ensure uniform font size */
+}
+
+/* Add general form and button styles */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+
+/* Global Background Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f0f0f0 0%, #e0e0e0 100%); /* Soft gradient */
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add a soft shadow */
+    border-radius: 8px; /* Rounded corners for a softer look */
+}
+
+.banner img {
+    width: 100%;
+    height: 50%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Style for headings */
+h1, h2 {
+    color: #333;
+    text-align: center;
+}
+
+/* Table Styling (for Admin Dashboard) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+table th {
+    background-color: #f8f8f8;
+}
+
+table td input[type="number"] {
+    width: 50px;
+}
+
+/* Product List (Customer Dashboard) */
+.product-list .product {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.product h3 {
+    color: #28a745;
+    margin-bottom: 10px;
+}
+
+.product p {
+    margin: 5px 0;
+}
+
+/* Button Hover Effect */
+button, input[type="submit"] {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+
+
+
+
+/* Adjust input and button alignment */
+table td input[type="number"] {
+    width: 60px; /* Increased width of the input box */
+    padding: 8px;
+    margin-right: 10px; /* Added margin between input and button */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center; /* Centered the number inside the input */
+}
+
+/* Button styling remains the same but aligns with input */
+button, input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Table cell vertical alignment */
+table td {
+    vertical-align: middle; /* Align content vertically in the middle */
+}
